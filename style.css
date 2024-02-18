@@ -10,6 +10,10 @@
     --light-orange: #EEDBCD;
     --white-smoke: #F4F4F4;
     --blue: #1677C6;
+
+    --border: 1px solid rgba( 255, 255, 255, 0.18 );
+    --background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    --background: rgba( 255, 255, 255, 0.3 );
 }
 
 * {
@@ -24,7 +28,7 @@ html, body {
 body {
     margin: 0;
     padding: 0.5rem;
-    background-color: var(--white-smoke);
+    background-image: var(--background-image);
     color: var(--dark-cyan-blue);
     display: flex;
     flex-direction: column;
@@ -37,6 +41,14 @@ body {
 body * {
     font-family: 'Source Code Pro';
 }
+
+nav, #about {
+    border: var(--border);
+    border-radius: 10px;
+    background: var(--background);
+    backdrop-filter: blur( 7.5px );
+    --webkit-backdrop-filter: blur( 7.5px );
+} 
 
 header {
     display: flex;
@@ -52,6 +64,7 @@ header {
 nav {
     display: flex;
     gap: 1rem;
+    padding: 5px;
 }
 
 ion-icon {
@@ -80,7 +93,8 @@ main {
 }
 
 #about {
-    max-width: 80%;
+    max-width: max(80%, 360px);
+    padding: 2rem;
 }
 
 #technologies {
