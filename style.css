@@ -12,8 +12,9 @@
     --blue: #1677C6;
 
     --border: 1px solid rgba( 255, 255, 255, 0.18 );
-    --background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    --background-gradient: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     --background: rgba( 255, 255, 255, 0.3 );
+    --box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
 }
 
 * {
@@ -28,7 +29,11 @@ html, body {
 body {
     margin: 0;
     padding: 0.5rem;
-    background-image: var(--background-image);
+    background-image: url(/assets/images/background-image.png), var(--background-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
     color: var(--dark-cyan-blue);
     display: flex;
     flex-direction: column;
@@ -42,12 +47,14 @@ body * {
     font-family: 'Source Code Pro';
 }
 
-nav, #about {
+/* glass effect */
+nav, #about, .skill, #experiences {
     border: var(--border);
     border-radius: 10px;
     background: var(--background);
     backdrop-filter: blur( 7.5px );
     --webkit-backdrop-filter: blur( 7.5px );
+    box-shadow: var(--box-shadow);
 } 
 
 header {
@@ -67,6 +74,11 @@ nav {
     padding: 5px;
 }
 
+.nav-icon {
+    width: 32px;
+    height: 32px;
+}
+
 ion-icon {
     cursor: pointer;
 }
@@ -78,23 +90,76 @@ ion-icon:hover {
 main {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 3rem;
 }
 
-#main-section {
+#left-card, #right-card {
+    max-width: 700px;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #about {
-    max-width: max(80%, 360px);
     padding: 2rem;
+}
+
+#skills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.skill {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    flex: auto;
+}
+
+.skill-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.skill-title {
+    font-size: x-large;
+    font-weight: bold;
+    margin: auto;
+}
+
+.skill-icon {
+    width: 60px;
+    border-radius: 10px;
+}
+
+#subskills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 2;
+}
+
+.subskill {
+    display: flex;
+}
+
+.subskill-icon {
+    width: 40px;
+    border-radius: 10px;
+}
+
+.subskill-title {
+    margin: auto 1rem;
 }
 
 #technologies {
