@@ -3,20 +3,6 @@
     src: url(assets/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
 }
 
-:root {
-    --dark-cyan-blue: #192231;
-    --gun-metal: #404A42;
-    --olive-drab: #C0B283;
-    --light-orange: #EEDBCD;
-    --white-smoke: #F4F4F4;
-    --blue: #1677C6;
-
-    --border: 1px solid rgba( 255, 255, 255, 0.18 );
-    --background-gradient: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    --background: rgba( 255, 255, 255, 0.3 );
-    --box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
-}
-
 * {
     box-sizing: border-box;
 }
@@ -24,226 +10,238 @@
 html, body {
     min-height: 100svh;
     width: 100%;
+    margin: 0;
 }
 
-body {
+body * {
+    font-family: 'Source Code Pro', serif;
+}
+
+header {
+    background: #fff;
+    padding-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-size: 2em;
     margin: 0;
-    padding: 0.5rem;
-    background-image: url(/assets/images/background-image.png), var(--background-gradient);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--dark-cyan-blue);
+}
+
+#socials-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+#intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
-    gap: 1rem;
-}
-
-body * {
-    font-family: 'Source Code Pro';
-}
-
-/* glass effect */
-nav, #about, .skill, #experiences {
-    border: var(--border);
-    border-radius: 10px;
-    background: var(--background);
-    backdrop-filter: blur( 7.5px );
-    --webkit-backdrop-filter: blur( 7.5px );
-    box-shadow: var(--box-shadow);
-} 
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-#logo:hover {
-    color: var(--olive-drab);
-}
-
-nav {
-    display: flex;
-    gap: 1rem;
-    padding: 5px;
-}
-
-.nav-icon {
-    width: 32px;
-    height: 32px;
-}
-
-ion-icon {
-    cursor: pointer;
-}
-
-ion-icon:hover {
-    color: var(--light-orange);
-}
-
-main {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-evenly;
-    gap: 3rem;
-}
-
-#left-card, #right-card {
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-#about {
-    padding: 2rem;
+    margin: auto;
+    padding: 1rem;
+    max-width: 1080px;
 }
 
 #skills {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.skill {
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
-    flex: auto;
-}
-
-.skill-summary {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-
-.skill-title {
-    font-size: x-large;
-    font-weight: bold;
-    margin: auto;
-}
-
-.skill-icon {
-    width: 60px;
-    border-radius: 10px;
-}
-
-#subskills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    flex: 2;
-}
-
-.subskill {
-    display: flex;
-}
-
-.subskill-icon {
-    width: 40px;
-    border-radius: 10px;
-}
-
-.subskill-title {
-    margin: auto 1rem;
-}
-
-#technologies {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
     justify-content: center;
-  }
-  
-  .technology-logo {
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-    transform: rotate(0deg);
-    font-size: x-large;
-    font-weight: bold;
-  }
-  
-.technology-logo img {
-    width: 100%;
-    height: auto;
-}
-
-.iam {
-    color: var(--olive-drab);
-}
-
-a {
-    color: var(--dark-cyan-blue);
-}
-
-#main-project, .experience {
-    border-left: 1px solid var(--olive-drab);
-    padding: 0.5rem;
-}
-
-#job-title {
-    color: var(--gun-metal);
-}
-
-#attribution * {
-    color: var(--olive-drab);
-}
-
-#attribution *:hover {
-    color: var(--gun-metal);
-}
-
-#resume-link, #email-me {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 1rem;
-    background-color: var(--blue);
-    padding: 0.5rem;
-    color: white;
-    box-shadow: 0px 10px 15px 8px rgba(192,178,131,0.3);
-    gap: 0.5rem;
-    cursor: pointer;
-}
-
-#resume-link:hover, #email-me:hover {
-    background-color: var(--olive-drab);
-}
-
-#resume-link {
-    left: 1rem;
-}
-
-#email-me {
-    right: 1rem;
-}
-
-#experiences {
+    /*align-items: center;*/
+    margin: auto;
     padding: 0 1rem;
+    max-width: 1080px;
 }
 
-@media (max-width: 420px) {
-    #resume-link {
-        bottom: 4rem;
-    }
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    /*border-radius: 9999px;*/
+    margin: 0.25rem;
+}
 
-    body {
-        padding-bottom: 7rem;
-    }
+.badge-language {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.badge-framework {
+    background-color: #7a7a7a;
+    color: white;
+}
+
+.badge-tool {
+    background-color: #a6a6a6;
+    color: white;
+}
+
+.badge-platform {
+    background-color: #d2d2d2;
+    color: white;
+}
+
+.badge-outline {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+.project-card {
+    background: #7a7a7a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.project-description {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.github-link {
+    background: #2d333b;
+    color: #fff;
+}
+
+.github-link:hover {
+    background: #373e47;
+}
+
+.live-link {
+    background: #646cff;
+    color: #fff;
+}
+
+.live-link:hover {
+    background: #535bf2;
+}
+
+#projects {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 3%;
+}
+
+.misc-section {
+    /*background: #1a1a1a;*/
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.misc-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    /*color: rgba(255, 255, 255, 0.9);*/
+    border-bottom: 2px solid #646cff;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.misc-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.misc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.misc-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #646cff;
+}
+
+.misc-content {
+    flex-grow: 1;
+}
+
+.misc-label {
+    font-weight: 500;
+    /*color: rgba(255, 255, 255, 0.9);*/
+    margin-bottom: 0.25rem;
+}
+
+.misc-text {
+    /*color: rgba(255, 255, 255, 0.7);*/
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.misc-link {
+    color: #646cff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.misc-link:hover {
+    color: #535bf2;
+    text-decoration: underline;
 }

@@ -1,238 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Ondieki - Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- <script defer src="index.js"></script> -->
-</head>
-
-<body>
-    <header>
-        <h1 id="logo">Joshua O.</h1>
-        <div>
-            <nav>
-                <a target="_blank" href="https://www.linkedin.com/in/iamoj" class="nav-icon"><ion-icon name="logo-linkedin"
-                        size="large"></ion-icon></a>
-                <a target="_blank" href="https://github.com/JoshuaOndieki" class="nav-icon"><ion-icon name="logo-github"
-                        size="large"></ion-icon></a>
-                <a target="_blank" href="https://medium.com/@joshuaondieki" class="nav-icon"><ion-icon name="logo-medium"
-                        size="large"></ion-icon></a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div id="left-card">
-            <section id="about">
-                <h2><span class="iam">Hi, I am </span> <span>Joshua Ondieki,</span></h2>
-                <h3 id="job-title">A Full Stack Software Engineer.</h3>
-                <p>
-                    I've spent years honing my skills and building projects that highlight my passion for programming.
-                    Fluent in JavaScript, Python, and HTML+CSS, and familiar with Java, TypeScript, and C#, I've
-                    developed various web-based applications and interactive command-line projects showing my ability to
-                    think creatively and solve complex problems.
-                    I'm a self-motivated learner who constantly seeks new challenges and opportunities to grow my skills
-                    and abilities.
-                    I'm currently learning React Native and improving my AWS knowledge.
-                </p>
-                <p><span> Email me: oj@joshuaondieki.com </span></p>
-            </section>
-            
-            <section id="experiences">
-                <h2>Experience</h2>
-                <div class="experience">
-                    <h3>Software Engineer <span> - Full Time - </span> <span><a target="_blank"
-                                href="https://www.griffinglobaltech.com">Griffin Global Technologies, LLC</a></span></h3>
-                    <div>31st July, 2023 - PRESENT </div>
-                </div>
-                <div class="experience">
-                    <h3>Software Engineer <span> - Internship - </span> <span><a target="_blank"
-                                href="https://thejitu.com">THE Jitu</a></span></h3>
-                    <div>3rd April, 2023 - 30th June, 2023 </div>
-                </div>
-            </section>
-            
-        </div>
-
-        <div id="right-card">
-            <section id="skills">
-                <!-- <h3>Technologies I'm currently active in</h3>
-                    <div id="technologies">
-                        <div class="technology-logo"><img src="assets/images/javascript.svg" alt="javascript"></div>
-                        <div class="technology-logo"><img src="assets/gifs/Typescript.gif" alt="typescript"></div>
-                        <div class="technology-logo"><img src="assets/gifs/Angular.gif" alt="angular"></div>
-                        <div class="technology-logo"><img src="assets/gifs/Node Js.gif" alt="node.js"></div>
-                        <div class="technology-logo">Express.js</div>
-                        <div class="technology-logo"><img src="assets/gifs/Sql.gif" alt="mssql"></div>
-                        <div class="technology-logo"><img src="assets/gifs/Python.gif" alt="python"></div>
-                    </div> -->
-                <div class="skill">
-                    <div class="skill-summary">
-                        <div class="skill-title">Java</div>
-                        <img class="skill-icon" src="assets/images/java.svg" />
-                    </div>
-                    <div id="subskills">
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/spring.png" />
-                            <div class="subskill-title">Spring</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/springboot.png" />
-                            <div class="subskill-title">Spring Boot</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/java.svg" />
-                            <div class="subskill-title">Legacy Java Maintenance & Migration</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill">
-                    <div class="skill-summary">
-                        <div class="skill-title">C#</div>
-                        <img class="skill-icon" src="assets/images/C_Sharp_Logo_2023.svg" />
-                    </div>
-                    <div id="subskills">
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/Microsoft_.NET_logo.svg.png" />
-                            <div class="subskill-title">.NET</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill">
-                    <div class="skill-summary">
-                        <div class="skill-title">Python</div>
-                        <img class="skill-icon" src="assets/images/python.svg" />
-                    </div>
-                    <div id="subskills">
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/django.svg" />
-                            <div class="subskill-title">Django</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/flask.png" />
-                            <div class="subskill-title">Flask</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/automation.svg" />
-                            <div class="subskill-title">Scripting & Automation</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill">
-                    <div class="skill-summary">
-                        <div class="skill-title">JavaScript & TypeScript</div>
-                        <img class="skill-icon" src="assets/images/js.svg" />
-                    </div>
-                    <div id="subskills">
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/angular-logo.svg" />
-                            <div class="subskill-title">Angular</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/nextjs.png" />
-                            <div class="subskill-title">Next.js</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/react.svg" />
-                            <div class="subskill-title">React</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/expressjs.png" />
-                            <div class="subskill-title">Express.js</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/reactnative.png" />
-                            <div class="subskill-title">React Native (learning)</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <div class="skill-summary">
-                        <div class="skill-title">Databases</div>
-                        <img class="skill-icon" src="assets/images/relational-database.svg" />
-                    </div>
-                    <div id="subskills">
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/ms-sql-icon.png" />
-                            <div class="subskill-title">Microsoft SQL Server</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/postgresql.svg" />
-                            <div class="subskill-title">Postgress</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/firebase.svg" />
-                            <div class="subskill-title">Firebase</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/supabase.jpg" />
-                            <div class="subskill-title">Supabase</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="skill">
-                    <div class="skill-summary">
-                        <div class="skill-title">DevOps</div>
-                        <img class="skill-icon" src="assets/images/devops.png" />
-                    </div>
-                    <div id="subskills">
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/aws-cloud.svg" />
-                            <div class="subskill-title">AWS</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/ci-cd.avif" />
-                            <div class="subskill-title">CI/CD</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/Circleci-icon-logo.svg.png" />
-                            <div class="subskill-title">CircleCI</div>
-                        </div>
-                        <div class="subskill">
-                            <img class="subskill-icon" src="assets/images/sunburst-graph-icon-flat-editable-design-vector.jpg" />
-                            <div class="subskill-title">Code Coverage & Quality Tools</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="main-project">
-                <h3>Latest Work</h3>
-                <h4>Studio Erickss</h4>
-                <p>A client site and an internal admin portal for Studio Erickss' business</p>
-                <div>
-                    <a target="_blank" href="https://erickss.com/">Erickss.com</a>
-                </div>
-            </section>
-        </div>
-
-
-    </main>
-    <footer>
-        <section id="attribution">
-            <div>
-                Attribution: Icons from
-                <a target="_blank" href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>
-                on
-                <a target="_blank" href="https://iconscout.com">IconScout</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Joshua Ondieki - Software Engineer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Joshua.</h1>
+            <div id="socials-icons">
+                <a href="http://medium.com/@joshuaondieki" target="_blank"><img src="/assets/icons/medium-svgrepo-com.svg" alt=""></a>
+                <a href="http://github.com/JoshuaOndieki" target="_blank"><img src="/assets/icons/github-142-svgrepo-com.svg" alt=""></a>
+                <a href="http://linkedin.com/in/iamoj" target="_blank"><img src="/assets/icons/linkedin-svgrepo-com.svg" alt=""></a>
             </div>
-        </section>
-    </footer>
+        </header>
 
-    <a target="_blank" id="resume-link"
-        href="https://docs.google.com/document/d/1ooqmEPTa46A1XHI4BmsZ_ngU2JLfPbDrugUBTFza_Nc/edit?usp=sharing">
-        <ion-icon name="download-outline"></ion-icon> RESUME </a>
-    <a target="_blank" href="mailto:oj@joshuaondieki.com" id="email-me"><ion-icon name="mail-outline"></ion-icon>
-        oj@joshuaondieki.com</a>
-</body>
+        <main>
+            <section id="intro">
+                <div>
+                    <h2>Hi, I'm Joshua Ondieki</h2>
+                    <p>Software Engineer at <a href="http://griffinglobaltech.com" target="_blank">Griffin Global Technologies, LLC</a></p>
+                    <hr>
+                    <p>
+                        I’m a versatile software engineer with a strong background in building scalable web applications and ERP
+                        systems using TypeScript, Java, C#, Python, and AWS. My expertise spans developing modular architectures, creating dynamic
+                        UIs, and managing SQL and NoSQL databases. I’m skilled at delivering robust, efficient solutions tailored to complex business
+                        needs and thrive in collaborative environments. I’m expanding my knowledge in React Native and AWS to stay ahead in the
+                        ever-evolving tech landscape.
+                    </p>
+                </div>
+            </section>
+            <section id="skills">
+                <div id="languages">
+                    <span class="badge badge-language">Java</span>
+                    <span class="badge badge-language">C#</span>
+                    <span class="badge badge-language">TypeScript</span>
+                    <span class="badge badge-language">JavaScript</span>
+                    <span class="badge badge-language">Python</span>
+                    <span class="badge badge-language">SQL</span>
+                    <span class="badge badge-language">HTML & CSS</span>
+                </div>
+                <div id="frameworks">
+                    <span class="badge badge-framework">Spring & Spring Boot</span>
+                    <span class="badge badge-framework">.NET</span>
+                    <span class="badge badge-framework">Expressjs</span>
+                    <span class="badge badge-framework">Angular</span>
+                    <span class="badge badge-framework">Nextjs/React</span>
+                    <span class="badge badge-framework">Django</span>
+                </div>
+                <div id="tools">
+                    <span class="badge badge-tool">Docker</span>
+                    <span class="badge badge-tool">CI/CD</span>
+                    <span class="badge badge-tool">Figma</span>
+                    <span class="badge badge-tool">AWS</span>
+                    <span class="badge badge-tool">Git</span>
+                </div>
+                <div id="platforms">
+                    <span class="badge badge-platform">Appwrite</span>
+                    <span class="badge badge-platform">Firebase</span>
+                </div>
+            </section>
 
+            <section id="projects">
+                <div class="project-card">
+                    <img
+                            src="/assets/images/erickss.png"
+                            alt="Erickss.com Project Preview"
+                            class="project-image"
+                    >
+                    <div class="project-content">
+                        <h3 class="project-title">erickss.com</h3>
+                        <p class="project-description">
+                            A client-facing and e-commerce website for Studio Erickss’ business.
+                            Built with Next.js.
+                            I’m building beeashara.com, a Java-based ERP that will power this and many other online businesses.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://erickss.com" target="_blank" class="project-link live-link">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                </svg>
+                                Live Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img
+                            src="/assets/images/gitconnect.png"
+                            alt="gitConnect Project Preview"
+                            class="project-image"
+                    >
+                    <div class="project-content">
+                        <h3 class="project-title">gitConnect</h3>
+                        <p class="project-description">
+                            NextJS Social Network for Developers. Built using Appwrite and Next.js
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/JoshuaOndieki/gitconnect" target="_blank" class="project-link github-link">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://gitconnect-tan.vercel.app/" target="_blank" class="project-link live-link">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img
+                            src="/assets/images/jituexchange.jpg"
+                            alt="JituExchange Project Preview"
+                            class="project-image"
+                    >
+                    <div class="project-content">
+                        <h3 class="project-title">JituExchange</h3>
+                        <p class="project-description">
+                            A lite version of StackOverflow built with Angular, Express.js, and MSSQL.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/JoshuaOndieki/JituExchange" target="_blank" class="project-link github-link">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="misc-section">
+                <h2 class="misc-title">More About Me</h2>
+                <div class="misc-grid">
+                    <div class="misc-item">
+                        <svg class="misc-icon" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                        </svg>
+                        <div class="misc-content">
+                            <div class="misc-label">Education</div>
+                            <div class="misc-text">Currently pursuing BSc. Computer Science at <a href="https://www.uopeople.edu" target="_blank">University of the People</a></div>
+                        </div>
+                    </div>
+
+                    <div class="misc-item">
+                        <svg class="misc-icon" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                        </svg>
+                        <div class="misc-content">
+                            <div class="misc-label">Resume</div>
+                            <div class="misc-text">
+                                View my complete work history and skills in my
+                                <a href="https://d3f89x6g1sc3fa.cloudfront.net/Joshua_Resume.pdf" target="_blank">Resume</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="misc-item">
+                        <svg class="misc-icon" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                        <div class="misc-content">
+                            <div class="misc-label">Contact</div>
+                            <div class="misc-text">
+                                Email me at <a href="mailto:oj@joshuaondieki.com" class="misc-link">oj@joshuaondieki.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
