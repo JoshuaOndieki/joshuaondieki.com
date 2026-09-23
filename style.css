@@ -86,9 +86,22 @@ svg {
   justify-content:space-between;
   border-bottom:1px solid var(--line)
 }
-.wordmark {
-  font:700 25px var(--serif);
-  letter-spacing:-1px
+.avatar-link {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  aspect-ratio:1;
+  padding:3px;
+  border-radius:50%
+}
+.avatar-link img {
+  display:block;
+  width:auto;
+  height:100%;
+  max-height:48px;
+  aspect-ratio:1;
+  object-fit:contain
 }
 .header nav {
   display:flex;
@@ -919,9 +932,6 @@ h1>span>svg {
   }
   .header {
     height:62px
-  }
-  .wordmark {
-    font-size:21px
   }
   .header nav {
     gap:15px;
