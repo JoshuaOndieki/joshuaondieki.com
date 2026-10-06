@@ -547,6 +547,9 @@ h1>span>svg {
 .certificate p span {
   white-space:normal
 }
+.certificate p a {
+  color:inherit
+}
 .certificate abbr {
   text-decoration:none
 }
